@@ -18,7 +18,7 @@ def check_facts(text: str) -> int:
     return 50
 
 def check_google_scholar(url: str) -> int:
-  serpapi_key = SerpAPI_Key
+  serpapi_key = "YOUR SerpAPI_Key HERE"
   params = {"q": url, "engine": "google_scholar", "api_key": serpapi_key}
   try:
     response = requests.get("https://serpapi.com/search", params=params)
